@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>BackGround Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p>I have a log file that generates lines like these:
+
+May 25 20:59:14 debian myprocess[1430]: pid 3490 started
+May 25 20:59:14 debian myprocess[1415]: pid 3491 started
+  </p>
+  <div>
+May 25 20:59:14 debian myprocess[1433]: pid 3492 started
+May 25 20:59:15 debian myprocess[1433]: pid 3492 completed
+May 25 20:59:17 debian myprocess[1451]: pid 3487 completed
+May 25 20:59:17 debian myprocess[1451]: pid 3493 started
+May 25 20:59:18 debian myprocess[1423]: pid 3489 completed
+  </div>
+<span>
+How do I go about creating a shell script that tells the runtime of a pid i.e., subtracts its start time from its completed time( completed - started).
+
+Example:
+
+3490 started   --> 20:59:14
+3490 completed --> 20:59:21
+3491 started   --> 20:59:14
+3491 completed --> 20:59:19
+
+The script must evaluate all the pid and determine their elapsed time. It must return the average of the start to complete time for all pid.
+</span>
+Please suggest.
+
+Thanks!
+
+</body>
+
+</html>
+

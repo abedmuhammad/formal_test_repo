@@ -1,0 +1,24 @@
+p:first-letter
+{
+    font-size: 40px;
+    color: #080;
+    background: #345812;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+}
+
+div:hover
+{
+    color: #00F;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+span:visited
+{
+    color: #E1C;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
